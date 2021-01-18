@@ -50,6 +50,7 @@ const routes = require('./api/routes/routes.js');
 routes(app)
 app.use(express.static(__dirname + '/public'));
 
+const server = require('http').Server(app)
 const port = process.env.PORT || 3000
 server.listen(port)
 console.log("working on " + port)
