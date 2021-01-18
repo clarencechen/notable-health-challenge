@@ -1,0 +1,157 @@
+/* ---- reset ---- */
+
+body {
+    margin: 0;
+    background-color: #17182f;
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#globe {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    /* Half the height */
+    margin-left: -100px;
+    /* Half the width */
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+}
+
+#globe:hover {
+    -webkit-transform: scale(1.2) rotate(0.01deg);
+    transform: scale(1.2) rotate(0.01deg);
+}
+
+html, body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.email-input, .password-input {
+    border-radius: 40px;
+    font-size: 20px;
+    padding-left: 15px;
+    color: #95A5A6;
+}
+
+.icon.user, .icon.password {
+    margin: 5px 10px 0 0;
+}
+
+.avatar img {
+    border-radius: 100px;
+    padding: 5px;
+    border: 1px solid #dbdbdb;
+}
+
+.forgot-password a {
+    color: #95A5A6;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.login {
+    padding-top: 20px;
+}
+
+.login button {
+    border-radius: 40px;
+    font-weight: bold;
+}
+
+.hero-body .container {
+    margin-top: -100px;
+}
+
+.login-wrapper {
+    margin: -0.75rem;
+    overflow-y: hidden;
+}
+
+.hero-banner .hero {
+    background: url('https://unsplash.it/2000/1000');
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: screen;
+}
+
+.hero-banner .title {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+}
+
+h1#name {
+    /* margin-left: -40px; */
+    /* width: 100px; */
+    font-family: "HelveticaNeue-Bold", Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 2.6em;
+    color: #6699cc;
+    margin-bottom: 0.1em
+}
+
+@keyframes particleAnimation
+{
+    from {
+        left: -100px;
+        bottom: -100px;
+    }
+    to {
+        left: calc( 100% + 100px );
+        bottom: calc(100% + 100px);
+    }
+}
+
+
+.p{
+  position:fixed;
+  left:0px;
+  top:50px;
+  width:1px;
+  height:1px;
+  background-color:white;
+  position:fixed;
+  animation-name:particleAnimation;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.p::before{
+  position:absolute;
+  display:block;
+  content:"";
+  width:100px;
+  right:1px;
+  top:0px;
+  height:1px;
+  background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,255,255,0.4) 100%);
+}
+.p-1{
+  animation-duration:10s;
+}
+.p-2{
+  animation-duration:5s;
+  top:60%;
+}
+.p-3{
+  animation-duration:20s;
+  top:90%;
+}

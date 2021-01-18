@@ -1,0 +1,31 @@
+{
+  "name": "notablehealthchallenge",
+  "version": "1.0.0",
+  "description": "Notable Health Coding Challenge",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clarencechen/notable-health-challenge.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clarencechen/notable-health-challenge/issues"
+  },
+  "homepage": "https://github.com/clarencechen/notable-health-challenge/",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "connect-pg-simple": "^6.2.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "fs": "0.0.1-security",
+    "pg": "^8.4.2"
+  },
+  "devDependencies": {
+    "dotenv-safe": "^4.0.4"
+  }
+}
